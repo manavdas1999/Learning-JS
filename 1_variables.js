@@ -22,7 +22,7 @@ userCity = "Mumbai"
 console.table([userID, userEmail, userPassword, userCity, userState, userCountry])
 
 // difference b/w var and let
-// 1. let is scoped functionally (introduced in ES6 2015)
+// 1. let is blocked scoped (introduced in ES6 2015)
 // 2. var is scoped globally
 {
 let userEmail = "user@gmail.com"

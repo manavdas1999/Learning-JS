@@ -3,7 +3,7 @@
 "use strict"   // if written on any file then all the code after it will be treated as newer ECMA JS standards.
 
 // NOTE: alert() is not defined in nodeJS 
-// NOTE: ; (comma) can be used to seperate statements when written on single line(not a good practice) otherwise comma is not needed in JS.
+// NOTE: ; (semi comma) can be used to seperate statements when written on single line(not a good practice) otherwise comma is not needed in JS.
 
 // commonly used primitive datatypes
 let name = "manav" // String
@@ -20,7 +20,9 @@ let whatTheHeck = NaN // signifies value is "Not A Number"
 
 // typeof operator => returns the type of a given value
 console.log(typeof age)
+console.log(typeof(age))
 // JS is weird
 console.log(typeof areYouDumb) // object
 console.log(typeof areYouCrazy) // undefined
 console.log(typeof whatTheHeck) // Number
+
