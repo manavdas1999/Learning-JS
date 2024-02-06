@@ -53,10 +53,14 @@ let notANumber = Number(NaN)
 console.log(notANumber) // stays the same, NaN
 console.log(typeof notANumber)
 
+let emptyString = ""
+let emptyStringAsNumber = Number(emptyString);
 
+console.log("!!!!!!",emptyStringAsNumber)
 // NOTES: Others to Number
 /*
 "33" => 33
+"" => 0
 "33abc" => NaN
 false => 0, true => 1
 null => 0
