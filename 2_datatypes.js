@@ -26,3 +26,27 @@ console.log(typeof areYouDumb) // object
 console.log(typeof areYouCrazy) // undefined
 console.log(typeof whatTheHeck) // Number
 
+// ///
+// Symbols (learn more about them)
+const id = Symbol('12')
+const anotherId = Symbol('12')
+console.log(id === anotherId) // false; symbols are never same in memory
+
+// Bigint
+const bigNumber = 6867987979668585886868979079n
+console.log(typeof bigNumber)
+
+
+
+// Summary of datatypes
+// 1. Two types - Primitive and Non primitive(or reference types)
+
+// // Primitives(call by value)
+// 7 types: String, Number, Boolean, null(Object), undefined, Symbol, BigInt
+
+// // Reference type (non primitive) (call by reference)
+// 3 types: Array, Objects, Functions(NOTE!!)
+//NOTE: all non primitive types are called Object datatypes 
+
+
+// 2. Javascript is dynamically typed
