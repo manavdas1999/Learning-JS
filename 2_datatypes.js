@@ -41,10 +41,10 @@ console.log(typeof bigNumber)
 // Summary of datatypes
 // 1. Two types - Primitive and Non primitive(or reference types)
 
-// // Primitives(call by value)
+// // Primitives(call by value) (in Stack)
 // 7 types: String, Number, Boolean, null(Object), undefined, Symbol, BigInt
 
-// // Reference type (non primitive) (call by reference)
+// // Reference type (non primitive) (call by reference) (in Heap)
 // 3 types: Array, Objects, Functions(NOTE!!)
 //NOTE: all non primitive types are called Object datatypes 
 
