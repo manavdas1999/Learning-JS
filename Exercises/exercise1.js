@@ -46,7 +46,11 @@ Question 4: #TODO
 Write a JS program to get the current date.
 Expected Output: dd-mm-yyyy or dd/mm/yyyy
 */
-
+function getCurrentDate(){
+    const date = new Date();
+    return  `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`
+}
+console.log(getCurrentDate())
 
 /*
 Question 5: #TODO
