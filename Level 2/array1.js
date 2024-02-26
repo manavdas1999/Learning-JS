@@ -2,7 +2,7 @@
 
 const myArr = [0,1,2,3,4,5]
 const myEvens = Array(2,4,6,8)
-const myOdds = new Array(1,3,5,7)
+const myOdds = new Array(1,3,5,7) // with or without new, makes no difference
 
 console.log(myArr)
 console.log(myEvens)
@@ -22,6 +22,9 @@ console.log(myArr2)
 // length property
 console.log(myArr.length)
 
+// arrays are index based but indices does not support negative values
+// .at(index) supports negative indices
+console.log(myArr.at(-2))
 // push (to append / insert at end)
 myArr.push(11, 12, 13)
 console.log(myArr)
@@ -44,6 +47,26 @@ console.log(myArr.includes(9))
 // find index of first occurance of element (returns -1 if not found)
 console.log(myArr.indexOf(5))
 console.log(myArr.indexOf(5, 3)) // .indexOf(value, fromIndex?)
+// also .lastIndexOf(value, fromIndex?)
+
+// reverse array : .reverse() - reverses the array in place
+console.log(myArr.reverse())
+// .toReversed() method of Array instances is the copying counterpart of the reverse() method. It returns a new array with the elements in reversed order.
+const revArr = myArr.toReversed()
+console.log(revArr)
+console.log(myArr)
+
+//(IMP!) sort array : .sort() - The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+// NOTE: we can provide a sorting function to define the sorting procedure(will learn later) .sort(fn)
+
+
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+
+const array1 = [1, 30, 4, 21, 100000];
+array1.sort();
+console.log(array1); // unexpected as it converts values to strings and then sorts according to UTF coding
 
 // array to string conversion
 let myArrString = myArr.join()
@@ -69,3 +92,13 @@ console.log(mySubArray1)
 mySubArray1 = myArr.slice(2, 5) // .slice(start?, end?) (end not inclusive)
 console.log(mySubArray1)
 
+// .splice(start, deleteCount?) starts deleting elements from 'start' and returns the removed part as array
+// console.log("Before", myArr) 
+// let mySubArray2 = myArr.splice(2) // .splice(start)
+// console.log(mySubArray2)
+// console.log("After", myArr)
+
+console.log("Before", myArr) 
+let mySubArray3 = myArr.splice(2, 3) // .splice(start)
+console.log(mySubArray3)
+console.log("After", myArr)
